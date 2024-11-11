@@ -1,0 +1,67 @@
+/*** Common ***/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: sans-serif;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputarea {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.inputbox {
+    width: 100%;
+    height: 150px;
+    font-size: 1em;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+.button-row {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.js-display-button {
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+.text-display {
+    white-space: pre-wrap; /* Preserve line breaks and whitespace */
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: sans-serif;
+    line-height: 1.6;
+    text-align: justify;
+    font-size: calc(1rem + 1vw); /* Adjust font size to fill the screen */
+}
+
+/* Adjust font size for larger screens */
+@media screen and (min-width: 768px) {
+    .text-display {
+        font-size: calc(1rem + 2vw);
+    }
+}
